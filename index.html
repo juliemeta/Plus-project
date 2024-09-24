@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          class="logo"
+          src="https://www.weather.shecodes.io/images/logo.png"
+          alt="shecodes logo"
+        />
+      </header>
+
+      <form id="city-search">
+        <input
+          class="enter-city-box"
+          type="search"
+          placeholder="Enter a city..."
+          autocomplete="off"
+          autofocus="on"
+          required
+          id="city-search-input"
+        />
+        <input class="search-button" type="submit" value="Search" />
+      </form>
+
+      <hr />
+      <div class="weather-info-box">
+        <section class="current-weather-box">
+          <div>
+            <h1 id="current-city">Copenhagen</h1>
+            <p>
+              <span id="WeekdayAndTime"></span>, cloudy <br />
+              Humidity: <span class="number-stats">80%</span>, Wind:
+              <span class="number-stats">3.6 km/h</span>
+            </p>
+          </div>
+          <div class="current-temperature-box">
+            <h2>
+              ☁ <span class="temperature">18</span
+              ><span class="celsius">°C</span>
+            </h2>
+          </div>
+        </section>
+        <ul>
+          <li>
+            <div class="weekdays">Wed</div>
+            <div class="weather-emojis">🌤</div>
+            <span class="temperature-day">22°</span
+            ><span class="temperature-night">14°</span>
+          </li>
+          <li>
+            <div class="weekdays">Thu</div>
+            <div class="weather-emojis">🌤</div>
+            <span class="temperature-day">22°</span
+            ><span class="temperature-night">14°</span>
+          </li>
+          <li>
+            <div class="weekdays">Fri</div>
+            <div class="weather-emojis">🌤</div>
+            <span class="temperature-day">22°</span
+            ><span class="temperature-night">14°</span>
+          </li>
+          <li>
+            <div class="weekdays">Sat</div>
+            <div class="weather-emojis">🌤</div>
+            <span class="temperature-day">22°</span
+            ><span class="temperature-night">14°</span>
+          </li>
+          <li>
+            <div class="weekdays">Sun</div>
+            <div class="weather-emojis">🌤</div>
+            <span class="temperature-day">22°</span
+            ><span class="temperature-night">14°</span>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <footer>
+        This project was coded by
+        <a
+          href="https://www.linkedin.com/in/julie-meta-monefeldt/"
+          target="_blank"
+          >Julie M. Jeffries</a
+        >
+        <br />
+        It is <a href="#" target="_blank">open-sourced on GiHub</a> and is
+        <a href="#" target="_blank">hosted on Netlify</a>.
+      </footer>
+    </div>
+    <script src="src/style.js"></script>
+  </body>
+</html>
